@@ -1,0 +1,6 @@
+When you initialize a repository a .git directory is created in your working directory.
+This creates a directory where metadata about the history of the files in your repository can be stored
+
+The staging area is different from the working directory and the repository because it doesn't store files,
+it's more of a temporary area to signal that these are files, from within a directory, to be tracked in a repository
+It means that you can change you mind, using git reset, before files are committed to the repository and tracked
