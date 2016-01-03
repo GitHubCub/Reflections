@@ -1,0 +1,29 @@
+Using diff to find bugs is useful because
+it's easier for humans to spot changes than to spot mistakes
+
+Having easy access to the entire history of a file
+makes you a more efficient programmer in the long term
+because making a mistake will not cost you time (you can go back to a previous version)
+and you can compare different techniques side-by-side to determine which works best
+
+the pros and cons of manually choosing when to create a commit,
+like you do in Git,
+vs having versions automatically saved, like Google Docs does, are:
++ you can prevent superfluous versions buildng up
++ you can create versions at logical intervals so that it's easy to go back and see what was done
+- you have to remember to commit
+- you have to remember a logical system of when to commit
+
+Some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately
+Git does this so that a change in one file, which would also require a related file to be changed (e.g. calling a defined process) can be saved together.
+This means that the logical change can be found using one commit, for all files - rather than finding multiple commits
+Google Docs might choose to treat each file separately to avoid many identical verisons of files building up
+(being saved, because a related file was changed, when no change was made to them)
+
+The command git log allows you to view a list of commits
+each with an ID, Date, Author and message
+Git diff allows you to compare changes between two files,
+specifically you can compare the changes between two commits using the IDs from GIT Log
+
+Using version control can make you more confident to make changes that might break something because
+you have the safety net of an older verison to revert back to, before the change was made
