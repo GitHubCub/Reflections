@@ -1,3 +1,8 @@
 Using a remote repository can be useful if you want to access your files from another machine/location
 It can also be useful if you want to share your files with other people for collaboration
 or "publish" them for other people to use/review
+
+You might want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository
+because if you're collaborating with others or letting any public member add to your repository,
+you might not always want to add thier changes into your repository
+e.g. if 1000 people made a 1000 branches (one each) and Git auto-saved everything onto your local machine, that would be a lot of data
