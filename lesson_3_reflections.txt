@@ -17,3 +17,8 @@ B: a branch exists only within one repository, it is a sequence of commits, link
 The benefit of having a copy of the last known state of the remote stored locally is
 that you can always check which changes you've made locally since last syncing with the remote
 and you can maintain the remote commits as a separate branch until you're ready to merge them to yours
+
+Without using GitHub, collaborationg would occur by either sending files manually and using phone/instant messenger/email to discuss
+or by using a sharepoint or dropbox or similar
+sending files manually would definitely be harder than using GitHub or another alternative because this could take a long time to do
+and you might get bogged down in versions and changes, without a tracker software helping you
