@@ -1,6 +1,30 @@
-When you initialize a repository a .git directory is created in your working directory.
+When you initialize a repository a .git directory is created, associated with your working directory.
 This creates a directory where metadata about the history of the files in your repository can be stored
 
 The staging area is different from the working directory and the repository because it doesn't store files,
 it's more of a temporary area to signal that these are files, from within a directory, to be tracked in a repository
 It means that you can change you mind, using git reset, before files are committed to the repository and tracked
+
+You can use the staging area to make sure you have one commit per logical change by checking the difference between the files in the staging area and your working directory before adding the modified file to the staging area
+and also checking the difference between the staging area and the repository before adding the staged file to the repository
+
+Some situations when branches would be helpful in keeping your history organized are:
+- making different versions for your code e.g. languages, difficulties
+- when experimenting with building new features
+- if you want to tailor a version for a specific audience
+Different braches could be made in each situations and changes committed would be specific to each branch
+
+Diagrams help you visualize branch structure by offering a second dimension to spread different branches across as they flow through one one dimension at each epoch
+
+Merging two branches together will create a new branch with a head containing the effects of all the modifications of the two branches.
+All the commits of the two branches become parents of the new merged branch,
+these commits are show interweaved, by time, in the git log; along with the merge commit
+
+The pros and cons of Git’s automatic merging vs. always doing merges manually are:
++ saves time
++ saves human errors such as typos
++ saves you always needing to understand a collaborator's code
+- for safety only some things can be automatically merged, so Git will often ask you to help
+- you might be incorporating a lot of new code into your program without knowing what it does
+	- this might make it harder to edit/fix later or harder to build upon
+	- this could incorporate dangerous code e.g. malware
