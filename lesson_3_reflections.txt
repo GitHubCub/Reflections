@@ -6,3 +6,8 @@ You might want to always pull changes manually rather than having Git automatica
 because if you're collaborating with others or letting any public member add to your repository,
 you might not always want to add thier changes into your repository
 e.g. if 1000 people made a 1000 branches (one each) and Git auto-saved everything onto your local machine, that would be a lot of data
+
+The differences between forks, clones, and branches are:
+F: is exculsive to clonging repositorys on GitHub; you'd use it to clone a repository and keep a link with the original 
+C: a clone creates an identical repository, you either clone from GitHub to your local machine or perhaps from your loacl machine to your loacl machine; you would clone a repository when you want to edit it on your machine
+B: a branch exists only within one repository, it is a sequence of commits, linked by a parent relationship (or in the case of a branch formed by a merge, it is a sequence of commits mad ein chronological order where each change can be tracked from a previous commit)
